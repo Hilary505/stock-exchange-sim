@@ -1,0 +1,16 @@
+# A self-powered ecosystem that can run indefinitely.
+# Happiness is the optimized resource that grows over time.
+
+# Initial stocks
+person:1
+water:10
+land:1
+
+# Processes
+grow_food:(water:2;land:1):(food:5):20
+eat_food:(person:1;food:1):(energy:10;waste:1):5
+process_waste:(waste:1):(water:1):15
+live_life:(person:1;energy:1):(happiness:1):1
+
+# Optimization goal
+optimize:(happiness)
