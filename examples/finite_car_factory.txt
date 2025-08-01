@@ -1,0 +1,15 @@
+# A simple, finite assembly line for cars. Resources will be consumed.
+
+# Initial stocks
+steel:100
+plastic:50
+rubber:20
+
+# Processes
+make_chassis:(steel:10):(chassis:1):20
+make_body:(plastic:5):(body:1):10
+make_tires:(rubber:4):(tires:4):5
+assemble_car:(chassis:1;body:1;tires:4):(car:1):30
+
+# Optimization goal
+optimize:(car;time)
