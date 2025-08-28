@@ -1,6 +1,5 @@
 package common
 
-
 // Resource represents a map of item names to their quantities.
 // Used for both stocks and the needs/results of processes.
 type Resource map[string]int

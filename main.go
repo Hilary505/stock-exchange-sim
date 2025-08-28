@@ -5,13 +5,12 @@ import (
 	"os"
 	"path/filepath"
 	"sort"
-	"strconv"
-	"strings"
-	"time"
-
 	"stock-exchange/internal/common"
 	"stock-exchange/internal/common/parser"
 	"stock-exchange/internal/common/scheduler"
+	"strconv"
+	"strings"
+	"time"
 )
 
 func main() {

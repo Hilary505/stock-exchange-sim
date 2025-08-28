@@ -12,8 +12,8 @@ import (
 )
 
 var (
-	stockRegex   = regexp.MustCompile(`^([\w_]+):(\d+)$`)
-	processRegex = regexp.MustCompile(`^([\w_]+):\(([^)]*)\):\(([^)]*)\):(\d+)$`)
+	stockRegex    = regexp.MustCompile(`^([\w_]+):(\d+)$`)
+	processRegex  = regexp.MustCompile(`^([\w_]+):\(([^)]*)\):\(([^)]*)\):(\d+)$`)
 	optimizeRegex = regexp.MustCompile(`^optimize:\(([^)]+)\)$`)
 )
 
@@ -42,7 +42,7 @@ func ParseConfig(filePath string) (*common.Config, error) {
 			return nil, err
 		}
 	}
-	
+
 	if len(config.Processes) == 0 {
 		return nil, fmt.Errorf("Missing processes")
 	}

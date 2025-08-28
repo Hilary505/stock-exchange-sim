@@ -9,7 +9,8 @@ import (
 
 	"stock-exchange/internal/common"
 	"stock-exchange/internal/common/parser"
-	simulator "stock-exchange/internal/common/stimulator" 
+
+	simulator "stock-exchange/internal/common/stimulator"
 )
 
 func main() {
@@ -41,7 +42,7 @@ func main() {
 	}
 
 	fmt.Printf("Trace completed, no error detected.\n")
-	fmt.Printf("Final cycle: %d\n", finalCycle) 
+	fmt.Printf("Final cycle: %d\n", finalCycle)
 }
 
 // readLogFile reads the schedule from a .log file.
